@@ -10,7 +10,14 @@ const contectRoutes = require("./routes/contectRoutes");
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+  origin: "https://learn-hub-frontend-ivory.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 app.use("/api/students", studentRoutes);
