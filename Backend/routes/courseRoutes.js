@@ -17,7 +17,7 @@ router.get('/',async (req,res)=>{
 
 router.get("/:id",async (req,res)=>{
     try{
-        const course = await student.findById(req.params.id);
+        const course = await Course.findById(req.params.id);
          if (!course) return res.status(404).json({message: "course not Found"});
          res.status(200).json(course);
     }
@@ -39,7 +39,7 @@ router.post('/',async(req,res)=>{
 
 router.put('/',async (req,res)=>{
     try{
-        const updatedCourse = await Student.findByIdAndUpdate(
+        const updatedCourse = await Course.findByIdAndUpdate(
             req.params.id,
             req.body,
             { new: true, runValidators: true}
