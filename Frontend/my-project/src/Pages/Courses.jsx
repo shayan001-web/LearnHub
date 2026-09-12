@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import CourseCard from "../Components/CourseCard";
 
-const API_URL = 'http://localhost:5000/api/courses';
+const API_URL = 'https://learn-hub-93dk.vercel.app//courses';
 
 function Courses(){
     const [courses, setCourses] = useState([]);
