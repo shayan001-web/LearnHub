@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const API_URL =
-  'https://learn-hub-backend-ecru.vercel.app/api/coursestudents';
+  'https://learn-hub-backend-ecru.vercel.app/api/students';
 const initialForm = {name:'',email:'',age:'',city:'',course:'',phone:''};
 
 function Register() {
