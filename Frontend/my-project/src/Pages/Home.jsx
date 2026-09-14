@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import CourseCard from '../Components/CourseCard';
 
-const API_URL = 'https://learn-hub-backend-git-main-shayan001-web.vercel.app/api/course';
-
+const API_URL =
+  "https://learn-hub-backend-ecru.vercel.app/api/course";
 function Home(){
     const [courses, setCourses] = useState([]);
     const [loading, setLoading] = useState(true);
