@@ -51,7 +51,7 @@ function Courses(){
             {error && <p className="error-message">{error}</p>}
             {!loading && !error && filteredCourses.length === 0 && (<p>No Courses Found</p>)}
             {!loading && !error &&(
-                <div className="grid">{filteredCourses.map((course)=>(<CourseCard key={Courses._id}course={course} />
+                <div className="grid">{filteredCourses.map((course)=>(<CourseCard key={course._id} course={course} />
 
                 ))}
                 </div>
