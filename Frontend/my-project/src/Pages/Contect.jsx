@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
-const API_URL= "https://learn-hub-backend-git-main-shayan001-web.vercel.app/api/contect";
+const API_URL =
+  "https://learn-hub-backend-ecru.vercel.app/api/contect";
 
 const initialForm = {name: "", email: "", subject: "", message: ""};
 
